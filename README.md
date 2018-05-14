@@ -2,7 +2,7 @@
 redux practice
 
 
-## 自己搭建的第一个react 应用
+## 一个简单的 react/redux 应用
   涉及react , redux , react-redux , & redux中间件 redux-logger , redux-thunk
 
 react简单应用
