@@ -149,6 +149,9 @@ let store = createStore(todoApp)
 * Provider
 * connect
 
+
+>容器组件和UI组件   UI组件  只负责UI的呈现 不带有任何的业务逻辑  没有状态   容器组件  负责管理数据和业务逻辑 不负责UI的呈现
+
 --
 
 app.js
@@ -182,4 +185,3 @@ function mapDispatchToProps(dispatch){
 * [Redux](http://www.redux.org.cn/)
 * [react-redux](https://redux.js.org/)
 * [demo](https://github.com/Jshoes/reduxPro.git)
-
