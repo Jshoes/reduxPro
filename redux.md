@@ -140,3 +140,46 @@ import todoApp from './reducers'
 let store = createStore(todoApp)
 
 ```
+
+
+--
+
+# react-Redux
+
+* Provider
+* connect
+
+--
+
+app.js
+```javascript
+import {Provider} from 'react-redux'
+<Provider store={store}>
+```
+
+--
+
+container.js
+```javascript
+import {connect} from 'react-redux'
+import {actions} from '../actions/actions'
+export connect(mapStateToProps,mapDispatchToProps,mergeProps,options)(viewComponent)
+
+function mapStateToProps(state){
+  return{
+    state:state
+  }
+}
+function mapDispatchToProps(dispatch){
+  return{
+    actions:actions
+  }
+}
+```
+--
+
+#参考资料
+* [Redux](http://www.redux.org.cn/)
+* [react-redux](https://redux.js.org/)
+* [demo](https://github.com/Jshoes/reduxPro.git)
+
