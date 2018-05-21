@@ -37,9 +37,12 @@ const initialState = {
 
 const reducer = handleActions(
   {
-    'ADD_NUMBER':(state = initialState , action)=>({
+    'ADD_NUMBER':(state, action)=>({
       number:action.payload.newNumber
     }),
+    'SUB_NUMBER':(state,action)=>({
+      number:action.payload.newNumber
+    })
   },
   {number:1}
 )
